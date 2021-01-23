@@ -1,21 +1,14 @@
-
-
-  <div class="d1">
-  <h2> Your Phone Number</h2>
-  <form name="f1">
-      <div class="phone"><input  type="text"  name="m1" placeholder="your phone Number"></div>
-
-
-      <input type="text" class="fullwidth" name="Password" placeholder="Password" > <br>
-
-      <button type="submit" class="fullwidth login" [routerLink]="['/home/login']" name="submit">Log In</button> <br>
-
-      <a role="button" class="a1" routerLink="/forgot" >Forgotten password?</a>
-
-      <hr>
-
-      <button type="button" class="signup" name="signUp" routerLink="/signup">Create New Account</button>
-
-
-  </form>
+<div class="d1">
+  <h1>Enter your PhoneNumbers: </h1>
+  <form id="frm1">
+  <div *ngFor="let value of myArray; index as i">
+   Your {{i+1}} PhoneNumber: <input type="text" name='{{value.id}}' [(ngModel)]="value.name" [value]="value.name">  <button *ngIf="button" (click)="removeItem(value.id)">Remove</button>
+  </div>
+  <button class="b1" (click)="addItem()">Add</button>
+  <button class="b1" (click)="showItem()">Show Data</button><p>{{text}}</p>
+</form>
+</div>
+<div class="b2">
+  <a role="button"  routerLink="/ques2">Quest 2</a>
+  <a role="button"  routerLink="/ques4">Quest 4</a>
 </div>

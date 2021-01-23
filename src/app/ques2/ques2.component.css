@@ -1,0 +1,12 @@
+.b1{position: absolute;
+  float: left;
+  width: 300px;
+  right: 45%;
+  bottom:4%;
+  color: blue;
+}
+.b1 a{
+  margin: 20px;
+  font-size: 22px;
+  text-decoration: none;
+}

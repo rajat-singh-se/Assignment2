@@ -28,6 +28,19 @@
   top:45%;
 }
 
+.b1{position: absolute;
+  float: left;
+  width: 300px;
+  right: 45%;
+  bottom:0%;
+  color: blue;
+}
+.b1 a{
+  margin: 20px;
+  font-size: 22px;
+  text-decoration: none;
+}
+
 div{
   width: 90%;
   height: 90%;

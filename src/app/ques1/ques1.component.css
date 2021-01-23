@@ -42,4 +42,16 @@ button:hover{
   color: blue;
   font-size: 20px;
 }
+.b1{position: absolute;
+  float: left;
+  width: 300px;
+  right: 45%;
+  bottom:2%;
+  color: blue;
+}
+.b1 a{
+  margin: 20px;
+  font-size: 22px;
+  text-decoration: none;
+}
 
