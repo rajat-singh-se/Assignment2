@@ -1,0 +1,14 @@
+div{
+
+  width: 300px;
+  height: 150px;
+  margin: auto;
+
+}
+input{
+  width: 200px;
+  background-color: rgba(27, 26, 26, 0.959);
+  color: white;
+  padding: 15px;
+  font-size: 20px;
+}

@@ -1,0 +1,9 @@
+
+<div class="d1">
+
+  <h4>Enter any index for the  2, 3, 10, 15, 26, 35, 50, 63, ....  series number</h4>
+  <input type="text" [(ngModel)]="text" >   <br>
+  <p *ngIf='dis'>If Index stated with 1 than your corresponding<br> Number of series is -> <span class="p1">{{ num}}</span></p>
+  <button type="button" class="Button" (click)='display()' >Display</button>
+
+</div>
