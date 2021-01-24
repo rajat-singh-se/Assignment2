@@ -1,6 +1,27 @@
-<p>ques2 works!</p>
+<div class="d1">
+  <button class="b1" (click)="addX()">Add X</button>
 
-<div class="b1">
+  <div class="x" *ngFor="let x of arrX; let i=index">
+  <h2>X{{i+1}}</h2>
+
+
+    <input [name]='i.toString()' [(ngModel)]='x.x'  [value]="x.x" type="text">
+    <button class="b2" (click)='submitx(i,x.x)' >Save</button><br>
+
+  <button class="b1" (click)="addY(i)">Add Y</button>
+    <div class="y" *ngFor="let y of arrX[i].y; let j=index" >
+      <h3>X{{i+1}} - Y{{j+1}}</h3>
+
+      <input [name]='j.toString()' [(ngModel)]='y.y'  [value]="y.y" type="text">
+      <button class="b2" (click)='submity(i,j,y.y)' >Save</button><br>
+
+    </div>
+  </div>
+  <button class="b1" *ngIf="sButton" (click)="showx()">Show Data</button> {{text}}
+
+</div>
+
+<div class="d2">
   <a role="button"  routerLink="/ques1">Quest 1</a>
   <a role="button"  routerLink="/ques3">Quest 3</a>
 </div>
